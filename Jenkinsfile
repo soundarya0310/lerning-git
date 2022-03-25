@@ -1,14 +1,14 @@
 pipeline {
   environment {
     imagename = "soundarya0310/mynginxapp"
-    registryCredential = 'soundarya0310-dockerhub'
+    registryCredential = 'dockerhubid'
     dockerImage = ''
     }
     agent any
     stages {
         stage('Git Clone') {
             steps {
-                git([url: 'https://github.com/soundarya0310/lerning-git.git', branch: 'master', credentialsId: 'soundarya0310-github-user-token'])
+                git([url: 'https://github.com/soundarya0310/lerning-git.git', branch: 'master', credentialsId: 'githubid'])
             }
         }
         stage('Build Image') {
