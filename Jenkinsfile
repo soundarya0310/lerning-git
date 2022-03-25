@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    imagename = "soundarya0310/mynginxapp"
+    imagename = "soundarya100620/mynginxapp"
     registryCredential = 'dockerhubid'
     dockerImage = ''
     }
